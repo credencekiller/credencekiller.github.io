@@ -1,75 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Immaneni Prakhyath - Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Immaneni Prakhyath. Computer and Communication Engineering at MIT Manipal. Agentic AI, full-stack, embedded systems.">
+<title>Immaneni Prakhyath</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;800&family=Space+Grotesk:wght@300;400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="load"><div class="mono"><div>MIT MANIPAL <span id="lp">0%</span></div><div class="lb"><i id="lbar"></i></div></div></div>
+<div id="cd"></div><div id="cr"></div><div id="sb"></div>
+<nav><a href="#work">Work</a><a href="#contact">Contact</a><button id="th" class="mono" title="Change theme">theme</button></nav>
 
-  
-  <header>
-    <img src="profile.jpeg" alt="my photo">
-    <h1>Immaneni Prakhyath</h1>
-    <p>Hello, I am a college student. Welcome to my website!</p>
-  </header>
+<header id="hero">
+<canvas id="cv"></canvas>
+<div class="hc">
+<div class="mono tag">MIT Manipal · Class of 2028</div>
+<h1 class="glitch" data-text="IMMANENI">IMMANENI</h1>
+<h1 class="glitch" data-text="PRAKHYATH">PRAKHYATH</h1>
+<div class="mono sub">Agentic AI · Full-Stack · Embedded Systems</div>
+<div class="btns"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="mailto:iprakh123@gmail.com">Get in touch</a></div>
+</div>
+<div class="ticker mono"><div id="tk"></div></div>
+</header>
 
-  
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<main id="work" class="wrap">
+<div class="bento">
+<article class="card c-about r"><div class="mono lab">About</div>
+<p class="big">I build AI tools that do things, not just answer. Student at MIT Manipal, working across the Claude API, Flask web apps and LPC1768 embedded systems.</p></article>
 
-  <main>
+<article class="card c-now r"><div class="mono lab">Now · Jun – Jul 2026</div>
+<h2>Agentic AI Intern</h2><p>Xarpie Labs, Machani Group. Built agentic AI with the Claude API.</p>
+<div class="chips"><span>Python</span><span>Flask</span><span>Claude API</span><span>SQLite</span><span>Render</span></div></article>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I live in Hyderabad. I like movies and I'm a huge foodie. I workout and play lots of sports, usually on weekends.</p>
-    </section>
+<article class="card r"><div class="mono lab">Jun – Jul 2025</div>
+<h2>Image Processing Intern</h2><p>ATMECS Technologies. AWS Bedrock (Eva Project).</p></article>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><b>B.Tech (Computer and Communication Engineering)</b><br>Manipal Institute of Technology (2024 - 2028)</li>
-        <li><b>12th</b><br>Glendale Academy (2023)</li>
-        <li><b>10th</b><br>Glendale Academy (2021)</li>
-      </ul>
-    </section>
+<article class="card r"><div class="mono lab">Education</div>
+<h2>B.Tech, CCE</h2><p>Manipal Institute of Technology, 2024 – 2028.</p></article>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="tags">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>C Programming</li>
-        <li>Python (basic)</li>
-      </ul>
-    </section>
+<article class="card c-skills r"><div class="mono lab">Skills</div>
+<div class="chips big-chips"><span>Python</span><span>C</span><span>Java</span><span>JavaScript</span><span>Flask</span><span>REST APIs</span><span>SQLite</span><span>Pandas</span><span>Claude API</span><span>Prompt Engineering</span><span>AWS Bedrock</span><span>Git</span><span>GitHub</span><span>HTML/CSS</span></div></article>
 
-    <section id="hobbies">
-      <h2>Hobbies</h2>
-      <ul class="tags">
-        <li>Gaming</li>
-        <li>Eating food</li>
-        <li>Watching movies</li>
-        <li>Listening to songs</li>
-      </ul>
-    </section>
+<article class="card r"><div class="mono lab">Sep 2024 – Sep 2026</div>
+<h2>Logistics Head</h2><p>Project Mudra. Ran club logistics and school outreach on peer pressure and sports.</p></article>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>GitHub: <a href="https://github.com/credencekiller" target="_blank">My GitHub</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/immaneni-prakhyath-697b96367/" target="_blank">My LinkedIn</a></p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Made by Immaneni Prakhyath</p>
-  </footer>
-
+<a class="card link r" href="https://github.com/credencekiller" target="_blank" rel="noopener noreferrer"><div class="mono lab">Code</div><h2>GitHub ↗</h2><p>credencekiller</p></a>
+<a class="card link r" href="https://www.linkedin.com/in/immaneni-prakhyath-697b96367/" target="_blank" rel="noopener noreferrer"><div class="mono lab">Network</div><h2>LinkedIn ↗</h2><p>Immaneni Prakhyath</p></a>
+<a id="contact" class="card link c-mail r" href="mailto:iprakh123@gmail.com"><div class="mono lab">Contact</div><h2>iprakh123@gmail.com</h2><p>Open to internships and collaborations.</p></a>
+</div>
+</main>
+<footer class="mono">© 2026 Immaneni Prakhyath</footer>
+<script src="script.js"></script>
 </body>
 </html>
