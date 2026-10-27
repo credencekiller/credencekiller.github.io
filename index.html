@@ -5,53 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Immaneni Prakhyath. Computer and Communication Engineering at MIT Manipal. Agentic AI, full-stack, embedded systems.">
 <title>Immaneni Prakhyath</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;800&family=Space+Grotesk:wght@300;400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="load"><div class="mono"><div>MIT MANIPAL <span id="lp">0%</span></div><div class="lb"><i id="lbar"></i></div></div></div>
-<div id="cd"></div><div id="cr"></div><div id="sb"></div>
-<nav><a href="#work">Work</a><a href="#contact">Contact</a><button id="th" class="mono" title="Change theme">theme</button></nav>
+<div class="aurora"><i></i><i></i><i></i></div><div class="grain"></div>
+<div id="sb"></div>
+<nav><div class="wrap nv">
+<a href="#top" class="logo mono">IP</a>
+<div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+<button id="kbtn" class="mono">Ctrl K</button>
+<div class="dots" aria-label="Theme"><button data-i="0" title="Ember"></button><button data-i="1" title="Ice"></button><button data-i="2" title="Violet"></button><button data-i="3" title="Lime"></button></div>
+</div></nav>
 
-<header id="hero">
-<canvas id="cv"></canvas>
-<div class="hc">
-<div class="mono tag">MIT Manipal · Class of 2028</div>
-<h1 class="glitch" data-text="IMMANENI">IMMANENI</h1>
-<h1 class="glitch" data-text="PRAKHYATH">PRAKHYATH</h1>
-<div class="mono sub">Agentic AI · Full-Stack · Embedded Systems</div>
-<div class="btns"><a class="btn" href="#work">See my work</a><a class="btn ghost" href="mailto:iprakh123@gmail.com">Get in touch</a></div>
+<header id="top"><div class="wrap hero">
+<div>
+<div class="pill mono"><i></i>Open to internships</div>
+<h1><span class="dec">Immaneni</span><br><span class="dec">Prakhyath</span></h1>
+<p class="role">I build <span id="rot">agentic AI tools</span></p>
+<p class="lead">Computer and Communication Engineering student at Manipal Institute of Technology, class of 2028.</p>
+<p class="mono clock">Manipal, India · <span id="clk"></span> IST</p>
+<div class="btns"><a class="btn" href="#experience">View experience</a><button class="btn ghost" id="cp">Copy email</button></div>
 </div>
-<div class="ticker mono"><div id="tk"></div></div>
-</header>
+<div class="ph"><div class="gl"></div><img src="profile.jpeg" alt="Immaneni Prakhyath" onerror="this.parentNode.style.display='none'"></div>
+</div></header>
+<div class="mq"><div class="mqt" id="mq"></div></div>
 
-<main id="work" class="wrap">
-<div class="bento">
-<article class="card c-about r"><div class="mono lab">About</div>
-<p class="big">I build AI tools that do things, not just answer. Student at MIT Manipal, working across the Claude API, Flask web apps and LPC1768 embedded systems.</p></article>
+<main>
+<section id="about" class="wrap"><div class="mono lab">About</div>
+<div class="two">
+<p class="big">I build AI tools that do things, not just answer. My work spans the Claude API, Flask web apps and LPC1768 embedded systems.</p>
+<div class="stats"><div><b data-n="2">0</b><span>Internships</span></div><div><b data-n="5">0</b><span>Semester</span></div><div><b data-n="2028">0</b><span>Graduating</span></div></div>
+</div></section>
 
-<article class="card c-now r"><div class="mono lab">Now · Jun – Jul 2026</div>
-<h2>Agentic AI Intern</h2><p>Xarpie Labs, Machani Group. Built agentic AI with the Claude API.</p>
-<div class="chips"><span>Python</span><span>Flask</span><span>Claude API</span><span>SQLite</span><span>Render</span></div></article>
+<section id="experience" class="wrap"><div class="mono lab">Experience</div>
+<div class="tl"><i class="fill"></i>
+<article class="it card"><div class="mono when">Jun – Jul 2026</div><h3>Agentic AI Development Intern</h3><p class="org">Xarpie Labs, Machani Group · Hyderabad</p><p>Built agentic AI applications using the Claude API.</p><div class="chips"><span>Python</span><span>Flask</span><span>Claude API</span><span>SQLite</span><span>Render</span></div></article>
+<article class="it card"><div class="mono when">Sep 2024 – Sep 2026</div><h3>Logistics Head</h3><p class="org">Project Mudra · MIT Manipal</p><p>Led club logistics and ran school outreach programs on peer pressure and sports.</p></article>
+<article class="it card"><div class="mono when">Jun – Jul 2025</div><h3>Image Processing Intern</h3><p class="org">ATMECS Technologies · Hyderabad</p><p>Worked on image processing with AWS Bedrock (Eva Project).</p><div class="chips"><span>Python</span><span>Pandas</span><span>Prompt Engineering</span></div></article>
+</div></section>
 
-<article class="card r"><div class="mono lab">Jun – Jul 2025</div>
-<h2>Image Processing Intern</h2><p>ATMECS Technologies. AWS Bedrock (Eva Project).</p></article>
+<section id="skills" class="wrap"><div class="mono lab">Skills</div>
+<div class="grid3">
+<div class="card"><h3>AI</h3><div class="chips"><span>Claude API</span><span>Prompt Engineering</span><span>AWS Bedrock</span><span>Pandas</span></div></div>
+<div class="card"><h3>Languages</h3><div class="chips"><span>Python</span><span>C</span><span>Java</span><span>JavaScript</span></div></div>
+<div class="card"><h3>Web & tools</h3><div class="chips"><span>Flask</span><span>REST APIs</span><span>SQLite</span><span>HTML/CSS</span><span>Git</span><span>GitHub</span></div></div>
+</div></section>
 
-<article class="card r"><div class="mono lab">Education</div>
-<h2>B.Tech, CCE</h2><p>Manipal Institute of Technology, 2024 – 2028.</p></article>
-
-<article class="card c-skills r"><div class="mono lab">Skills</div>
-<div class="chips big-chips"><span>Python</span><span>C</span><span>Java</span><span>JavaScript</span><span>Flask</span><span>REST APIs</span><span>SQLite</span><span>Pandas</span><span>Claude API</span><span>Prompt Engineering</span><span>AWS Bedrock</span><span>Git</span><span>GitHub</span><span>HTML/CSS</span></div></article>
-
-<article class="card r"><div class="mono lab">Sep 2024 – Sep 2026</div>
-<h2>Logistics Head</h2><p>Project Mudra. Ran club logistics and school outreach on peer pressure and sports.</p></article>
-
-<a class="card link r" href="https://github.com/credencekiller" target="_blank" rel="noopener noreferrer"><div class="mono lab">Code</div><h2>GitHub ↗</h2><p>credencekiller</p></a>
-<a class="card link r" href="https://www.linkedin.com/in/immaneni-prakhyath-697b96367/" target="_blank" rel="noopener noreferrer"><div class="mono lab">Network</div><h2>LinkedIn ↗</h2><p>Immaneni Prakhyath</p></a>
-<a id="contact" class="card link c-mail r" href="mailto:iprakh123@gmail.com"><div class="mono lab">Contact</div><h2>iprakh123@gmail.com</h2><p>Open to internships and collaborations.</p></a>
-</div>
+<section id="contact" class="wrap"><div class="mono lab">Contact</div>
+<div class="card big-card"><h2>Let’s build something.</h2><p>Open to internships and collaborations.</p>
+<div class="btns"><a class="btn" href="mailto:iprakh123@gmail.com">iprakh123@gmail.com</a><a class="btn ghost" href="https://github.com/credencekiller" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn ghost" href="https://www.linkedin.com/in/immaneni-prakhyath-697b96367/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></section>
 </main>
-<footer class="mono">© 2026 Immaneni Prakhyath</footer>
+<footer class="wrap mono"><span>© 2026 Immaneni Prakhyath</span><a href="#top">Back to top</a></footer>
+<div id="pal"><div class="pb"><input id="pi" placeholder="Type a command or section…" autocomplete="off"><ul id="pl"></ul></div></div>
+<div id="toast" class="mono">Email copied</div>
 <script src="script.js"></script>
 </body>
 </html>
